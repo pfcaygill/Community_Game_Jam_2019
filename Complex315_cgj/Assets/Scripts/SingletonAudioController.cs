@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SingletonAudioController : MonoBehaviour
 {
@@ -9,18 +10,32 @@ public class SingletonAudioController : MonoBehaviour
     {
         //Singleton
         if (instance == null)
+        {
             instance = this;
-        else { Destroy(gameObject); return; }
+        }
+        else
+        {
+            Destroy(gameObject);
+            return ;
+        }
         //Stop the singleton being destroyed
         DontDestroyOnLoad(gameObject);
         //build object for each sound to play the sound
-        foreach (Sound s in sounds) { s.BindAudioSource(gameObject.AddComponent<AudioSource>()); }
+        foreach (Sound s in sounds) {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.BindAudioSource();
+        }
     }
    
     public void Play(string name)
     {
         Sound clip = Array.Find(sounds, sound => sound.name == name);
-        if (clip != null) clip.source.Play(); 
-        Debug.Log("Sound triggered: "+((clip!=null)?clip.name:name+" not found"));
+        if (clip != null && clip.source !=null) {
+            clip.source.Play();
+        } 
+        Debug.Log("Sound triggered: "+
+            ((clip!=null && clip.source != null) ?
+                clip.name:
+                name+" not found"));
     }
 }

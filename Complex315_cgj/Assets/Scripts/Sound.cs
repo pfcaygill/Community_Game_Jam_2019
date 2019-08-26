@@ -14,8 +14,8 @@ public class Sound
     [HideInInspector]
     public AudioSource source;
     //Make the object set its own properties
-    public void BindAudioSource(AudioSource toBind) {
-        source = toBind;
+    public void BindAudioSource()
+    {
         source.clip = clip;
         source.volume = volume;
         source.loop = loop;
