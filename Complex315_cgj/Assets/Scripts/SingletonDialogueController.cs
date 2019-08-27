@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using TMPro;
+using UnityEngine.UI;
 
 public class SingletonDialogueController : MonoBehaviour
 {
     //UI
-    public TextMeshProUGUI nameText;
-    public TextMeshProUGUI dialogueText;
+    public Text nameText;
+    public Text dialogueText;
     public Animator animator;
-
     private UnityEvent invokeOnComplete;
     private Queue<string> sentences;
 
