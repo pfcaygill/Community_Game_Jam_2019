@@ -5,27 +5,37 @@ using UnityEngine.Events;
 
 public class NPCController : MonoBehaviour
 {
+    public string Requirement = null;
+    public UnityEvent onRequirementMetTrigger;
     public UnityEvent onInteractionTriggers;
     [HideInInspector]
     private bool triggered = false;
+    private bool requirementTriggered = false;
 
     public void Trigger()
     {
-        onInteractionTriggers.Invoke();
-        triggered = true;
-    }
-    public void OnTriggerStay2D(Collider2D other)
-    {
+        //if there is a requirement, and it is met, and we have not allready done the thing, do the thing
         if (
-            other.gameObject.CompareTag("Player") &&
-            Input.GetKey(KeyCode.Return) 
-        ){
-            Debug.Log("Interract");
-            if (!triggered) { Trigger(); }
+            Requirement != null &&
+            Requirement.Length > 0 &&
+            SingletonGameStateController.instance.Check(Requirement) &&
+            !requirementTriggered )
+        {
+            requirementTriggered = true;
+            onRequirementMetTrigger.Invoke();
+            return;
         }
-    }
+        //else do the normal behavior
+        if(!triggered)
+            onInteractionTriggers.Invoke();
+        triggered = true;
+    }    
     public void SetTrigger(bool set)
     {
         triggered = set;
+    }
+    public void SetRequirementTrigger(bool set)
+    {
+        requirementTriggered = set;
     }
 }

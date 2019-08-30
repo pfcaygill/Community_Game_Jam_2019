@@ -7,7 +7,7 @@ public class DoorController : MonoBehaviour
 {
     public Animator doorSprite;
     public BoxCollider2D doorTrigger;
-    public bool openCurrently;
+    public bool openCurrently =false;
     //the label of the scene we are going to transition to
     public string transitionToLabel;
     //the transform to apply when a player comes through this door
@@ -23,6 +23,7 @@ public class DoorController : MonoBehaviour
     public void Trigger(bool open)
     {
         openCurrently = open;
+        if (open) SingletonAudioController.instance.Play("Door_Open");
         doorSprite.SetBool("isOpen", openCurrently);
         doorTrigger.isTrigger = openCurrently;
     }

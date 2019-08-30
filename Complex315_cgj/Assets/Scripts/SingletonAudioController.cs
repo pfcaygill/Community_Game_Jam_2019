@@ -18,13 +18,16 @@ public class SingletonAudioController : MonoBehaviour
             Destroy(gameObject);
             return ;
         }
-        //Stop the singleton being destroyed
         DontDestroyOnLoad(gameObject);
         //build object for each sound to play the sound
         foreach (Sound s in sounds) {
             s.source = gameObject.AddComponent<AudioSource>();
             s.BindAudioSource();
         }
+    }
+    void Start()
+    {
+        Play("Castle");
     }
    
     public void Play(string name)

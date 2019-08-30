@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     }
     IEnumerator PlayGameRoutine() {
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene("Home");
+        SceneManager.LoadScene("Room1");
     }
     public void QuitGame()
     {

@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     Vector2 currentPoint;
     [HideInInspector]
     bool readyForInput = true;
+    bool interacting = false;
     void Start()
     {
         //Make sure our movement stays where the player has been put before the player is allowed to move
@@ -25,9 +26,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //Update checks inputs
-        if (readyForInput)
+        if (readyForInput && !interacting)
         {
-            currentPoint = body.position;
+            currentPoint = new Vector2( body.position.x, body.position.y);
             destination.x += Input.GetAxisRaw("Horizontal");
             if (destination.x == currentPoint.x) destination.y += Input.GetAxisRaw("Vertical"); //enforce no diagonals
             if (destination.x != currentPoint.x)
@@ -58,11 +59,27 @@ public class PlayerController : MonoBehaviour
     //called when the player bumps into an object
     public void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("not trapped");
         switch(collision.gameObject.tag)
         {
-            default: destination = currentPoint; break;
+            default:
+                destination = currentPoint;
+                Debug.Log("reset");
+                break;
         }
     }
-                                 
-    
+
+    public void OnTriggerStay2D(Collider2D other)
+    {
+        if (
+            other.gameObject.CompareTag("NPC") &&
+            Input.GetKey(KeyCode.Return)
+        )
+        {
+            other.gameObject//select the npc
+                .GetComponent<NPCController>()//get the script component
+                .Trigger(); //trigger the script behavior
+        }
+    }
+
 }

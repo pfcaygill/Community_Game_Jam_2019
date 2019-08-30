@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using TMPro;
 
 public class SingletonDialogueController : MonoBehaviour
 {
     //UI
-    public Text nameText;
-    public Text dialogueText;
-    public Animator animator;
-    private UnityEvent invokeOnComplete;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI dialogueText;
+    public Animator MovementAnimator;
+    public Animator CharacterAnimator;
+    private UnityEvent invokeOnComplete = null;
     private Queue<string> sentences;
 
     public static SingletonDialogueController instance;
@@ -26,14 +28,14 @@ public class SingletonDialogueController : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        //Stop the singleton being destroyed
-        DontDestroyOnLoad(gameObject);
         sentences = new Queue<string>();
+        DontDestroyOnLoad(gameObject);
     }
 
     public void StartDialogue (Dialogue dialogue)
     {
-        animator.SetBool("isOpen", true);
+        CharacterAnimator.SetBool("IsFriend", "F(r)iend".Equals( dialogue.charName));
+        MovementAnimator.SetBool("isOpen", true);
         nameText.text = dialogue.charName;
         sentences.Clear();
         foreach (string sentence in dialogue.sentences)
@@ -45,6 +47,7 @@ public class SingletonDialogueController : MonoBehaviour
 
     public void DisplayNext()
     {
+        Debug.Log("Displaying Next Dialogue");
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -55,10 +58,11 @@ public class SingletonDialogueController : MonoBehaviour
     }
     public void EndDialogue()
     {
-        animator.SetBool("isOpen", false);
+        MovementAnimator.SetBool("isOpen", false);
         //once the dialogue closes we want to invoke the on finish event if it exists
         //and then empty out the event slot
         if (invokeOnComplete != null) {
+            Debug.Log("Invoking on dialogue complete");
             invokeOnComplete.Invoke();
             invokeOnComplete = null;
         }
