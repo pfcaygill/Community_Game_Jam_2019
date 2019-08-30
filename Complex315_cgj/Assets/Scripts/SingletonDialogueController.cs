@@ -47,12 +47,12 @@ public class SingletonDialogueController : MonoBehaviour
 
     public void DisplayNext()
     {
-        Debug.Log("Displaying Next Dialogue");
         if (sentences.Count == 0)
         {
             EndDialogue();
             return;
         }
+        SingletonAudioController.instance.Play("Select");
         string next = sentences.Dequeue();
         dialogueText.text = next;
     }

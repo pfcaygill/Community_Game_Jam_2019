@@ -14,12 +14,20 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     Vector2 destination;
     [HideInInspector]
-    Vector2 currentPoint;
+    Vector2 currentPoint; //we know this should never be 0,0 as our grid is offset
     [HideInInspector]
     bool readyForInput = true;
     bool interacting = false;
     void Start()
     {
+        //SPECIAL SPAWN BEHAVIOR
+        if (!Vector2.zero.Equals(currentPoint))
+        {
+            Debug.Log(currentPoint);
+            destination = currentPoint;
+            body.MovePosition(currentPoint);
+            return;
+        }
         //Make sure our movement stays where the player has been put before the player is allowed to move
         destination = body.position;
     }
@@ -81,5 +89,13 @@ public class PlayerController : MonoBehaviour
                 .Trigger(); //trigger the script behavior
         }
     }
+    public void Spawn(Vector2 other, float xanim, float yanim) {
+        //spawns you out of a door
+        currentPoint = other;
+    }
 
+    public void TeleportFix(Vector2 other)
+    {
+        destination += other;
+    }
 }

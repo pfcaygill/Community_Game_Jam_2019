@@ -127,6 +127,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: openCurrently
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: transitionToLabel
+      value: Room2
+      objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555285, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: m_Name
@@ -204,6 +214,16 @@ PrefabInstance:
     - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: ySpawn
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: transitionToLabel
+      value: Room4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: openCurrently
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555285, guid: a1d80410517dba4478a732d6333c5998,
@@ -967,6 +987,30 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &875269277 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1228950483}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5479674ef7794314db3e04f369d5c237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &875269278 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1228950483}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c276918c8796aa49bbee101eb77dbeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &928140773
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,6 +2414,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: A crossroads eh? This feels oddly familiar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 875269277}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 875269278}
+    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9062cadd780d3bd4f8f492f8826f8aad, type: 3}
 --- !u!1001 &1368058519
@@ -2387,12 +2496,12 @@ PrefabInstance:
     - target: {fileID: 2376604636982700880, guid: 87f4cab8b64f40d43955d620aeeea5dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2376604636982700880, guid: 87f4cab8b64f40d43955d620aeeea5dc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2376604636982700880, guid: 87f4cab8b64f40d43955d620aeeea5dc,
         type: 3}
@@ -2522,6 +2631,16 @@ PrefabInstance:
       propertyPath: xSpawn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: openCurrently
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: transitionToLabel
+      value: Room6
+      objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555285, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: m_Name
@@ -2600,6 +2719,16 @@ PrefabInstance:
         type: 3}
       propertyPath: ySpawn
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: openCurrently
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: transitionToLabel
+      value: Room5
       objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555285, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}

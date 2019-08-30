@@ -1885,6 +1885,12 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!50 &833268883 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2376604636982700881, guid: 87f4cab8b64f40d43955d620aeeea5dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 190726463}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1042971161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1960,7 +1966,7 @@ PrefabInstance:
     - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
         type: 3}
       propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
         type: 3}
@@ -2000,7 +2006,7 @@ PrefabInstance:
     - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
         type: 3}
       propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
         type: 3}
@@ -4785,7 +4791,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406253401}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -5236,6 +5242,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2447059127425900293, guid: e1adc45f4740f234a9c7935cd29f5bc2,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 833268883}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1adc45f4740f234a9c7935cd29f5bc2, type: 3}
 --- !u!1001 &1563786781
@@ -5329,10 +5340,20 @@ PrefabInstance:
       propertyPath: xSpawn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: openCurrently
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: transitionToLabel
+      value: Room4
+      objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555285, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: m_Name
-      value: DoorToRoom5
+      value: DoorToRoom4
       objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555241, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
@@ -5572,6 +5593,16 @@ PrefabInstance:
       propertyPath: xSpawn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: transitionToLabel
+      value: Room1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: openCurrently
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555285, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: m_Name
@@ -5632,6 +5663,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555287, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555287, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d80410517dba4478a732d6333c5998, type: 3}
 --- !u!1001 &1938847535
@@ -5654,7 +5695,7 @@ PrefabInstance:
     - target: {fileID: 3450801299723555285, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: m_Name
-      value: DoorToRoom4
+      value: DoorToRoom5
       objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555241, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}

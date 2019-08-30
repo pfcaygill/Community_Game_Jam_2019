@@ -18,7 +18,8 @@ public class DoorController : MonoBehaviour
         doorSprite.SetFloat("x", xSpawn);
         doorSprite.SetFloat("y", ySpawn);
         //modify the state of the box collider and the door sprite to match our expectations
-        Trigger(openCurrently);
+        doorSprite.SetBool("isOpen", openCurrently);
+        doorTrigger.isTrigger = openCurrently;
     }
     public void Trigger(bool open)
     {
