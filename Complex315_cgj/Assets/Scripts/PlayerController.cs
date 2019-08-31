@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     bool readyForInput = true;
     bool interacting = false;
+    bool beginInteraction = false;
     void Start()
     {
         //SPECIAL SPAWN BEHAVIOR
@@ -53,6 +54,10 @@ public class PlayerController : MonoBehaviour
         //and sets us ready to move again if the difference of position is less than a threshhold
         readyForInput = (body.position.x == destination.x && body.position.y == destination.y);
         animator.SetBool("moving",!readyForInput);
+        //due to some double triggering issues:
+        if (Input.GetKeyDown(KeyCode.Return)) {
+            beginInteraction = true;
+        }
     }
     void FixedUpdate()
     {
@@ -80,10 +85,10 @@ public class PlayerController : MonoBehaviour
     public void OnTriggerStay2D(Collider2D other)
     {
         if (
-            other.gameObject.CompareTag("NPC") &&
-            Input.GetKey(KeyCode.Return)
+            other.gameObject.CompareTag("NPC") && beginInteraction
         )
         {
+            beginInteraction = false;
             other.gameObject//select the npc
                 .GetComponent<NPCController>()//get the script component
                 .Trigger(); //trigger the script behavior

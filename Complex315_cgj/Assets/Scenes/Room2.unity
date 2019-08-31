@@ -4712,8 +4712,8 @@ GameObject:
   - component: {fileID: 1406253403}
   - component: {fileID: 1406253411}
   - component: {fileID: 1406253409}
-  - component: {fileID: 1406253408}
   - component: {fileID: 1406253410}
+  - component: {fileID: 1406253408}
   m_Layer: 0
   m_Name: WaterTrigger
   m_TagString: NPC
@@ -5059,32 +5059,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1406253401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c276918c8796aa49bbee101eb77dbeb, type: 3}
+  m_Script: {fileID: 11500000, guid: d742ae48b89208b4b9b767f1ebd1cb5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    charName: Lucky Pond
-    sentences:
-    - You can see other coins glittering at the bottom of the pond like the one you
-      found.
-    - You toss your coin into the bottom of the pond.
-    - The door opened!
-  triggerOptionalEventsOnEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1402974545}
-        m_MethodName: Trigger
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1406253409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5102,7 +5079,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1406253410}
-        m_MethodName: Trigger
+        m_MethodName: TriggerHidden
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5146,6 +5123,13 @@ MonoBehaviour:
     charName: Pond
     sentences:
     - It looks as if there are shiny objects glittering at the bottom of the pond...
+  hiddenDialogue:
+    charName: Lucky Pond
+    sentences:
+    - You can see other coins glittering at the bottom of the pond like the one you
+      found.
+    - You toss your coin into the bottom of the pond.
+    - The door opened!
   triggerOptionalEventsOnEnd:
     m_PersistentCalls:
       m_Calls:
@@ -5159,6 +5143,33 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  hiddenTriggerOptionalEventOnEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1402974545}
+        m_MethodName: Trigger
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1406253408}
+        m_MethodName: Pass
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: POOL
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -5325,6 +5336,11 @@ PrefabInstance:
         type: 3}
       propertyPath: ySpawn
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: transitionToLabel
+      value: Room3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d80410517dba4478a732d6333c5998, type: 3}

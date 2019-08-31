@@ -1060,6 +1060,7 @@ GameObject:
   - component: {fileID: 1287960799}
   - component: {fileID: 1287960798}
   - component: {fileID: 1287960801}
+  - component: {fileID: 1287960802}
   m_Layer: 0
   m_Name: Well
   m_TagString: NPC
@@ -1134,17 +1135,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    charName: ???
+    charName: Well
     sentences:
     - An old dried up well. You peer over and see a bucket at the bottom, where a
       small spring of water has formed
     - You spin the handle, and watch as the bucket of water is pulled up from the
       bottom
     - You take the bucket of water with you, in case you need it for something.
+  hiddenDialogue:
+    charName: 
+    sentences: []
   triggerOptionalEventsOnEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1556611865}
+      - m_Target: {fileID: 1287960802}
         m_MethodName: Pass
         m_Mode: 5
         m_Arguments:
@@ -1155,6 +1159,11 @@ MonoBehaviour:
           m_StringArgument: BUCKET
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  hiddenTriggerOptionalEventOnEnd:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1287960800
@@ -1212,16 +1221,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1556611865 stripped
+--- !u!114 &1287960802
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2447059127425900293, guid: e1adc45f4740f234a9c7935cd29f5bc2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1654044284}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1287960795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33c275a46e08a654488b83ab6599662c, type: 3}
+  m_Script: {fileID: 11500000, guid: d742ae48b89208b4b9b767f1ebd1cb5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1654044284

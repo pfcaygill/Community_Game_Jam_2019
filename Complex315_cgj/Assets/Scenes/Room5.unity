@@ -256,6 +256,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2447059127425900293, guid: e1adc45f4740f234a9c7935cd29f5bc2,
+        type: 3}
+      propertyPath: bucket
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1adc45f4740f234a9c7935cd29f5bc2, type: 3}
 --- !u!1001 &169829895
@@ -2551,8 +2556,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1434035240}
-        m_MethodName: Trigger
-        m_Mode: 6
+        m_MethodName: TriggerHidden
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2568,7 +2573,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1434035240}
         m_MethodName: Trigger
-        m_Mode: 6
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -10,19 +10,18 @@ public class DialogueTrigger : MonoBehaviour
     //creates an event that can have listeners added to it in the unity editor
     public UnityEvent triggerOptionalEventsOnEnd;
     public UnityEvent hiddenTriggerOptionalEventOnEnd;
-    public void Trigger(bool hidden)
+    public void Trigger()
     {
-        if (hidden)
-        {
-            if (hiddenTriggerOptionalEventOnEnd.GetPersistentEventCount() >= 1)
-                SingletonDialogueController.instance.BindEventToDialogueComplete(hiddenTriggerOptionalEventOnEnd);
-            SingletonDialogueController.instance.StartDialogue(hiddenDialogue);
-            return;
-        }
-
+        Debug.Log("Triggering normal dialogue");
         if (triggerOptionalEventsOnEnd.GetPersistentEventCount() >= 1)
             SingletonDialogueController.instance.BindEventToDialogueComplete(triggerOptionalEventsOnEnd);
         SingletonDialogueController.instance.StartDialogue(dialogue);
     }
-
+    public void TriggerHidden()
+    {
+        Debug.Log("Triggering hidden dialogue");
+        if (hiddenTriggerOptionalEventOnEnd.GetPersistentEventCount() >= 1)
+            SingletonDialogueController.instance.BindEventToDialogueComplete(hiddenTriggerOptionalEventOnEnd);
+        SingletonDialogueController.instance.StartDialogue(hiddenDialogue);
+    }
 }

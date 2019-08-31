@@ -469,6 +469,7 @@ GameObject:
   - component: {fileID: 647831921}
   - component: {fileID: 647831920}
   - component: {fileID: 647831924}
+  - component: {fileID: 647831925}
   m_Layer: 0
   m_Name: Coin
   m_TagString: NPC
@@ -638,6 +639,9 @@ MonoBehaviour:
     - There is a coin floating above the pedastal
     - You reach out and grab the coin off the pedastal...
     - It floats in the palm of your hand. You put the coin in your pocket.
+  hiddenDialogue:
+    charName: 
+    sentences: []
   triggerOptionalEventsOnEnd:
     m_PersistentCalls:
       m_Calls:
@@ -652,6 +656,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 647831925}
+        m_MethodName: Pass
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: COIN
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  hiddenTriggerOptionalEventOnEnd:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &647831924
@@ -664,6 +684,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8dbebeca16beb749b3d99d3a458b9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &647831925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647831917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d742ae48b89208b4b9b767f1ebd1cb5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &657900486
