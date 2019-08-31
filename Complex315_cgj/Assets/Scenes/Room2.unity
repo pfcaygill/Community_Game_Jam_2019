@@ -1903,6 +1903,91 @@ PrefabInstance:
       propertyPath: m_Name
       value: F(r)iend
       objectReference: {fileID: 0}
+    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1042971163}
+    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1042971162}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Huh... I could have sworn there were only two doors here the other day...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: dialogue.charName
+      value: F(r)iend
+      objectReference: {fileID: 0}
+    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Hmm...
+      objectReference: {fileID: 0}
     - target: {fileID: 6439145036620864499, guid: 9062cadd780d3bd4f8f492f8826f8aad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1962,91 +2047,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1042971162}
-    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: Huh... I could have sworn there were only two doors here the other day...
-      objectReference: {fileID: 0}
-    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: triggerOptionalEventsOnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: dialogue.charName
-      value: F(r)iend
-      objectReference: {fileID: 0}
-    - target: {fileID: 8027716593757298853, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[1]
-      value: Hmm...
-      objectReference: {fileID: 0}
-    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1042971163}
-    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Trigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
-        type: 3}
-      propertyPath: onInteractionTriggers.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9062cadd780d3bd4f8f492f8826f8aad, type: 3}
@@ -4712,11 +4712,11 @@ GameObject:
   - component: {fileID: 1406253403}
   - component: {fileID: 1406253411}
   - component: {fileID: 1406253409}
-  - component: {fileID: 1406253410}
   - component: {fileID: 1406253408}
+  - component: {fileID: 1406253410}
   m_Layer: 0
   m_Name: WaterTrigger
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5063,7 +5063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    charName: 
+    charName: Lucky Pond
     sentences:
     - You can see other coins glittering at the bottom of the pond like the one you
       found.
@@ -5143,7 +5143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    charName: 
+    charName: Pond
     sentences:
     - It looks as if there are shiny objects glittering at the bottom of the pond...
   triggerOptionalEventsOnEnd:
@@ -5256,16 +5256,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
-        type: 3}
-      propertyPath: xSpawn
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
-        type: 3}
-      propertyPath: ySpawn
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555285, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: m_Name
@@ -5326,6 +5316,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: xSpawn
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: ySpawn
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d80410517dba4478a732d6333c5998, type: 3}
 --- !u!1001 &1778552243
@@ -5335,21 +5335,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
-        type: 3}
-      propertyPath: xSpawn
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
-        type: 3}
-      propertyPath: openCurrently
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
-        type: 3}
-      propertyPath: transitionToLabel
-      value: Room4
-      objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555285, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: m_Name
@@ -5409,6 +5394,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: xSpawn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: openCurrently
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: transitionToLabel
+      value: Room4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d80410517dba4478a732d6333c5998, type: 3}
@@ -5588,21 +5588,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
-        type: 3}
-      propertyPath: xSpawn
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
-        type: 3}
-      propertyPath: transitionToLabel
-      value: Room1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
-        type: 3}
-      propertyPath: openCurrently
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555285, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: m_Name
@@ -5663,6 +5648,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: xSpawn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: transitionToLabel
+      value: Room1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: openCurrently
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555287, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: m_Size.x
@@ -5682,16 +5682,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
-        type: 3}
-      propertyPath: xSpawn
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
-        type: 3}
-      propertyPath: ySpawn
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555285, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: m_Name
@@ -5751,6 +5741,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: xSpawn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
+        type: 3}
+      propertyPath: ySpawn
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d80410517dba4478a732d6333c5998, type: 3}

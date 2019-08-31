@@ -8,7 +8,9 @@ public class SingletonGameStateController : MonoBehaviour
 {
     public static SingletonGameStateController instance;
 
-    private Dictionary<string, bool> state;
+    //would normally want to use a dictionary, but am running out of time at this point
+   
+    public bool bucket, coin, pool = false;
     private string PreviousSceneName = null;
 
     void Awake()
@@ -24,34 +26,30 @@ public class SingletonGameStateController : MonoBehaviour
             return;
         }
         DontDestroyOnLoad(gameObject);
-        //track everything between scenes
-        state = new Dictionary<string, bool>();
     }
     void OnEnable() { SceneManager.sceneLoaded += OnLoadCallback; }
     void OnDisable() { SceneManager.sceneLoaded -= OnLoadCallback; }
     //used to check the current state
     public bool Check(string upto)
     {
-        bool passed = false;
-        state.TryGetValue(upto, out passed);
-        return passed;
+        switch (upto) {
+            case "BUCKET": return instance.bucket;
+            case "COIN": return instance.coin;
+            case "POOL": return instance.pool;
+            default: return false;
+        }
     }
     
     //used to store new additions to the state
-    void UpdateState(string passed)
+    public void Pass(string passed)
     {
-        state.Add(passed, true);       
-    }
-
-    //used to load into the state from a file
-    void LoadState()
-    {
-
-    }
-    //used to save the state from a file
-    void SaveState()
-    {
-
+        switch (passed)
+        {
+            case "BUCKET": instance.bucket = true;break;
+            case "COIN": instance.coin = true; break;
+            case "POOL": instance.pool = true; break;
+            default: return;
+        }
     }
     void OnLoadCallback(Scene scene, LoadSceneMode scenemode)
     {

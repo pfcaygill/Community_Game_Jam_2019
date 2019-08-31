@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3450801299723555287}
   - component: {fileID: 3450801299723555284}
   - component: {fileID: 3450801299723555240}
+  - component: {fileID: 7286392325171458805}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -49,6 +50,7 @@ MonoBehaviour:
   doorSprite: {fileID: 3450801299723555284}
   doorTrigger: {fileID: 3450801299723555287}
   openCurrently: 0
+  hidden: 0
   transitionToLabel: Menu
   xSpawn: -1
   ySpawn: 0
@@ -148,3 +150,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7286392325171458805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450801299723555285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 232e18ce5f4de9248ad9aaf7496c0376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverText: Door to another room

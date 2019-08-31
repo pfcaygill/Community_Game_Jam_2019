@@ -195,7 +195,7 @@ PrefabInstance:
     - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: transitionToLabel
-      value: Room2
+      value: Room11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d80410517dba4478a732d6333c5998, type: 3}
@@ -274,12 +274,12 @@ PrefabInstance:
     - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: ySpawn
-      value: 13
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: transitionToLabel
-      value: Room4
+      value: Room9
       objectReference: {fileID: 0}
     - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
@@ -962,7 +962,23 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!66 &635925734
+--- !u!19719996 &635925734
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635925730}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
+--- !u!66 &635925735
 CompositeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -980,7 +996,7 @@ CompositeCollider2D:
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
-  - m_Collider: {fileID: 635925736}
+  - m_Collider: {fileID: 635925734}
     m_ColliderPaths:
     - - X: -62187616
         Y: 10000000
@@ -1142,7 +1158,7 @@ CompositeCollider2D:
       - {x: 2.9999883, y: -7}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.000005
---- !u!50 &635925735
+--- !u!50 &635925736
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -1163,22 +1179,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!19719996 &635925736
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635925730}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!114 &875269277 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 812124279083276171, guid: 9062cadd780d3bd4f8f492f8826f8aad,
@@ -2619,12 +2619,12 @@ PrefabInstance:
     - target: {fileID: 6439145036620864499, guid: 9062cadd780d3bd4f8f492f8826f8aad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6439145036620864499, guid: 9062cadd780d3bd4f8f492f8826f8aad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6439145036620864499, guid: 9062cadd780d3bd4f8f492f8826f8aad,
         type: 3}
@@ -2688,7 +2688,7 @@ PrefabInstance:
     - target: {fileID: 2376604636982700880, guid: 87f4cab8b64f40d43955d620aeeea5dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2376604636982700880, guid: 87f4cab8b64f40d43955d620aeeea5dc,
         type: 3}
@@ -2891,7 +2891,7 @@ PrefabInstance:
     - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: transitionToLabel
-      value: Room12
+      value: Room6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d80410517dba4478a732d6333c5998, type: 3}
@@ -2980,7 +2980,7 @@ PrefabInstance:
     - target: {fileID: 3450801299723555286, guid: a1d80410517dba4478a732d6333c5998,
         type: 3}
       propertyPath: transitionToLabel
-      value: Room11
+      value: Room12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d80410517dba4478a732d6333c5998, type: 3}
