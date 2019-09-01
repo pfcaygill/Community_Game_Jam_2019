@@ -16,7 +16,7 @@ public class SingletonAudioController : MonoBehaviour
         else
         {
             Destroy(gameObject);
-            return ;
+            return;
         }
         DontDestroyOnLoad(gameObject);
         //build object for each sound to play the sound
@@ -29,16 +29,23 @@ public class SingletonAudioController : MonoBehaviour
     {
         Play("Castle");
     }
-   
+
     public void Play(string name)
     {
         Sound clip = Array.Find(sounds, sound => sound.name == name);
-        if (clip != null && clip.source !=null) {
+        if (clip != null && clip.source != null) {
             clip.source.Play();
+        }
+        Debug.Log("Sound triggered: " +
+            ((clip != null && clip.source != null) ?
+                clip.name :
+                name + " not found"));
+    }
+    public void Stop(string name)
+    {
+        Sound clip = Array.Find(sounds, sound => sound.name == name);
+        if (clip != null && clip.source !=null) {
+            clip.source.Stop();
         } 
-        Debug.Log("Sound triggered: "+
-            ((clip!=null && clip.source != null) ?
-                clip.name:
-                name+" not found"));
     }
 }

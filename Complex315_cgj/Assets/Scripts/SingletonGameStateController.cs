@@ -63,12 +63,16 @@ public class SingletonGameStateController : MonoBehaviour
             DoorController fromDoor = Array.Find(doors, door => PreviousSceneName.Equals(door.transitionToLabel));
             //modify the player transform, by combining the door transform and the transform modifiers
             Transform newPos = fromDoor.gameObject.transform;
-            Vector2 vec = new Vector2(
+            
+            player.gameObject.transform.position = new Vector3(
+                newPos.position.x + fromDoor.xSpawn,
+                newPos.position.y + fromDoor.ySpawn,
+                -1//fix the player position to not spawn at 0 on the axis
+                );
+            player.Spawn(new Vector2(
                 newPos.position.x + fromDoor.xSpawn,
                 newPos.position.y + fromDoor.ySpawn
-                );
-            player.gameObject.transform.position = vec;
-            player.Spawn(vec, fromDoor.xSpawn, fromDoor.ySpawn);
+                ), fromDoor.xSpawn, fromDoor.ySpawn);
 
         }
         //set the previous scene to be this scene (should always happen)
